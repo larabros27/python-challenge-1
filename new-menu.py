@@ -184,11 +184,11 @@ for order in order_list:
     item_price = order["Price"]
     item_quantity = order["Quantity"]
     # 8. Calculate the number of spaces for formatted printing
-    num_item_spaces = 24 - len(item_name)
+    num_item_spaces = 25- len(item_name)
     item_spaces = "_" * num_item_spaces
     # 9. Create space strings
     # 10. Print the item name, price, and quantity
-    print(f"{item_name}{item_spaces} | ${item_price:.2f} | {item_quantity}")
+    print(f"{item_name}{item_spaces} | ${item_price:.2f}  | {item_quantity}")
 # 11. Calculate the cost of the order using list comprehension
 # Multiply the price by quantity for each item in the order list, then sum()
 # and print the prices.
